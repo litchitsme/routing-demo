@@ -1,0 +1,22 @@
+<div><h2>User Details</h2></div>
+<div>
+<p>User name: {{ userById?.name }}</p>
+<p>User email: {{ userById?.email }}</p>
+@if (userById?.phone) {
+    <p>User phone: {{ userById?.phone }}</p>
+}
+@if (userById?.website) {
+    <p>User website: {{ userById?.website }}</p>
+}
+<br>
+@if (userById?.company) {
+    <h3>Company info</h3> 
+}  
+@if (userById?.company?.name) {
+    <p>User company name: {{ userById?.company?.name }}</p>
+}
+@if (userById?.company?.catchPhrase) {
+    <p>User company slogan: {{ userById?.company?.catchPhrase }}</p>
+}
+</div>
+
